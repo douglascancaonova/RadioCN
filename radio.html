@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Rádio Canção Nova</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="background:#000;display:flex;justify-content:center;align-items:center;height:100vh;">
-<audio controls autoplay src="https://streaming.fox.srv.br:8074/stream" style="width:90%;max-width:400px;"></audio>
+<body style="margin:0;background:#000;height:100vh;">
+<audio id="r" src="https://streaming.fox.srv.br:8074/stream" autoplay style="display:none;"></audio>
+<script>
+document.getElementById("r").play().catch(()=>{});
+</script>
 </body>
 </html>
